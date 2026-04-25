@@ -1,0 +1,91 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: Africa/Nairobi
+
+title: Bala Grivine
+tagline: Writing about systems, databases, and software engineering
+description: Personal blog by Bala Grivine — systems programming, databases, and software engineering.
+url: "https://balagrivine.github.io"
+
+github:
+  username: balagrivine
+
+social:
+  name: Bala Grivine
+  email: bala.grivine@savannahinformatics.com
+  links:
+    - https://github.com/balagrivine
+
+# Leave blank to follow system preference, or set to "light" / "dark"
+theme_mode:
+
+avatar: /assets/img/avatar.jpg
+
+# Sidebar social icons — set to true to show
+toc: true
+
+comments:
+  provider:
+
+analytics:
+  google:
+    id:
+
+paginate: 10
+
+permalink: /posts/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+  - scope:
+      path: _tabs
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - README.md
+  - LICENSE
+  - migrate_hashnode.py
+  - "*.sh"
