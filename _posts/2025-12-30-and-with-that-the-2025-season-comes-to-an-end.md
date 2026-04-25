@@ -1,7 +1,7 @@
 ---
 title: "And with that the 2025 season comes to an end..."
 date: 2025-12-30 09:10:54 +0000
-categories: [2025]
+categories: ["2025"]
 tags: ["2025", "engineering", "yearinreview"]
 image:
   path: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/TamMbr4okv4/upload/09fc8e9b9293d1403ff0375724d4886a.jpeg

@@ -66,7 +66,7 @@ def build_chirpy_frontmatter(fm: dict, date: datetime) -> str:
     if tags:
         category = tags[0].replace("-", " ").title()
         tags_yaml = ", ".join(f'"{t}"' for t in tags)
-        lines.append(f"categories: [{category}]")
+        lines.append(f'categories: ["{category}"]')
         lines.append(f"tags: [{tags_yaml}]")
 
     if cover:
